@@ -4,5 +4,5 @@ public enum Pose
 }
 public enum Recorder
 {
-    Nobody, Artus, Joey, Lana, Maryna, Nico
+    Nobody, Artus, Joey, Lana, Marina, Nico
 }
