@@ -17,6 +17,8 @@ public class DEV_Recorder : MonoBehaviour
     [SerializeField] private Recorder recorder = Recorder.Nobody;
     private string handPoseName, savePath;
     private bool isRecording = false;
+    private float timeSinceLastSave = 0f; // Time since last save
+    private float saveInterval = 3f; // Interval between saves
 
     // Start is called before the first frame update
     void Start()
@@ -28,14 +30,18 @@ public class DEV_Recorder : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // Update is called once per frame but SaveCurrentMCEPose is called at most every saveInterval seconds
     void Update()
     {
+        // Increase the time since the last save
+        timeSinceLastSave += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.R)) ToggleRecording();
 
-        if (isRecording)
+        if (isRecording && timeSinceLastSave >= saveInterval)
         {
             SaveCurrentMCEPose();
+            timeSinceLastSave = 0f; // Reset the time since last save
         }
     }
 
