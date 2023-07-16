@@ -8,14 +8,17 @@ public class PauseAndDisplay : MonoBehaviour
     [SerializeField] private List<AudioClip> audioFiles;
     [SerializeField] private TMP_Text displayText, headline;
     [SerializeField] private float pauseDuration = 2f; // 2 seconds pause
-    [SerializeField] private string headlineDefault = "Place your hand above Leap!", headlineDetected = "Detected MCE letter:";
+    [SerializeField] private string headlineDefault = "Place your hand above Leap!",
+        headlineDetected = "Detected MCE letter:", headlineTimeout = "Try again. Make a MCE gesture.";
     private float lastDetectedTime = 0;
 
     private void Update()
     {
         // Resets Texts after 5s of waiting after each detection.
         if (lastDetectedTime != 0 && (Time.time > lastDetectedTime + 5.0f))
-            OnLetterLost();
+            OnLetterLost(headlineTimeout);
+        if (lastDetectedTime != 0 && (Time.time > lastDetectedTime + 30.0f))
+            OnLetterLost(headlineDefault);
     }
 
     /// <summary>
@@ -36,6 +39,17 @@ public class PauseAndDisplay : MonoBehaviour
             lastDetectedTime = Time.time;
             PlaySound(detectedLetter);
         }
+    }
+
+    /// <summary>
+    /// This method would be called by your detection script.
+    /// It clears the letter and headline text.
+    /// <param name="setText">The text to set.</param>
+    /// </summary>
+    public void OnLetterLost(string setText)
+    {
+        displayText.text = "";
+        headline.text = setText;
     }
 
     /// <summary>
