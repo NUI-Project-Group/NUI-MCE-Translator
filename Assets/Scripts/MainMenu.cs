@@ -15,7 +15,10 @@ public class MainMenu : MonoBehaviour {
     public void Quit()
     {
         Debug.Log("QIUT NUI-TRANSLATOR!");
-        Application.Quit();
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+            Application.Quit();
     }
 
 }

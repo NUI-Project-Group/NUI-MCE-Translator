@@ -6,8 +6,9 @@ public class PauseAndDisplay : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private List<AudioClip> audioFiles;
-    [SerializeField] private TMP_Text displayText;
+    [SerializeField] private TMP_Text displayText, headline;
     [SerializeField] private float pauseDuration = 2f; // 2 seconds pause
+    [SerializeField] private string headlineDefault = "Place your hand above Leap!", headlineDetected = "Detected MCE letter:";
     private float lastDetectedTime = 0;
 
     /// <summary>
@@ -23,10 +24,21 @@ public class PauseAndDisplay : MonoBehaviour
          */
         if (Time.time - lastDetectedTime > pauseDuration && !audioSource.isPlaying)
         {
+            headline.text = headlineDetected;
             displayText.text = detectedLetter;
             lastDetectedTime = Time.time;
             PlaySound(detectedLetter);
         }
+    }
+
+    /// <summary>
+    /// This method would be called by your detection script.
+    /// It clears the letter and headline text.
+    /// </summary>
+    public void OnLetterLost()
+    {
+        displayText.text = "";
+        headline.text = headlineDefault;
     }
 
     /// <summary>
