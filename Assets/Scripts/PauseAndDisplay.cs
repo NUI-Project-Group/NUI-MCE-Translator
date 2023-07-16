@@ -6,13 +6,10 @@ public class PauseAndDisplay : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private List<AudioClip> audioFiles;
-<<<<<<< Updated upstream
-    [SerializeField] private TMP_Text displayText, headline;
-=======
     [SerializeField] private TMP_Text outputText, headlineText;
->>>>>>> Stashed changes
     [SerializeField] private float pauseDuration = 2f; // 2 seconds pause
-    [SerializeField] private string headlineDefault = "Place your hand above Leap!",
+    [SerializeField]
+    private string headlineDefault = "Place your hand above Leap!",
         headlineDetected = "Detected MCE letter:", headlineTimeout = "Try again. Make a MCE gesture.";
     private float lastDetectedTime = 0;
 
@@ -38,13 +35,8 @@ public class PauseAndDisplay : MonoBehaviour
          */
         if (!audioSource.isPlaying && Time.time - lastDetectedTime > pauseDuration)
         {
-<<<<<<< Updated upstream
-            headline.text = headlineDetected;
-            displayText.text = detectedLetter;
-=======
             headlineText.text = headlineDetected;
             outputText.text = detectedLetter;
->>>>>>> Stashed changes
             lastDetectedTime = Time.time;
             PlaySound(detectedLetter);
         }
@@ -57,31 +49,18 @@ public class PauseAndDisplay : MonoBehaviour
     /// </summary>
     public void OnLetterLost(string setText)
     {
-<<<<<<< Updated upstream
-        displayText.text = "";
-        headline.text = setText;
-    }
-
-    /// <summary>
-=======
         outputText.text = "";
         headlineText.text = setText;
     }
 
     /// <summary>
     /// Overload method.
->>>>>>> Stashed changes
     /// This method would be called by your detection script.
     /// It clears the letter and headline text.
     /// </summary>
     public void OnLetterLost()
     {
-<<<<<<< Updated upstream
-        displayText.text = "";
-        headline.text = headlineDefault;
-=======
         OnLetterLost(headlineTimeout);
->>>>>>> Stashed changes
     }
 
     /// <summary>

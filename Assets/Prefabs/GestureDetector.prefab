@@ -30,16 +30,16 @@ Transform:
   m_Children:
   - {fileID: 491405476186688381}
   - {fileID: 3168303276423876745}
-  - {fileID: 1621055301580784267}
-  - {fileID: 8753185588749743457}
-  - {fileID: 1780043656547824750}
-  - {fileID: 2583931639499273452}
-  - {fileID: 5194552218036159279}
   - {fileID: 157935284739435524}
   - {fileID: 5382566640287744926}
   - {fileID: 1796159209497715185}
   - {fileID: 2435106636190162263}
   - {fileID: 7788633236228274732}
+  - {fileID: 1621055301580784267}
+  - {fileID: 8753185588749743457}
+  - {fileID: 1780043656547824750}
+  - {fileID: 2583931639499273452}
+  - {fileID: 5194552218036159279}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,7 +73,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 8
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5511931085468248172
 MonoBehaviour:
@@ -333,9 +333,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 47478258010a3bb4092b28a78954a1c7, type: 3}
   - {fileID: 8300000, guid: d603211e1d9ebf5408c97e8e4ca4e442, type: 3}
   - {fileID: 8300000, guid: badaee1648f3042468d899bb10ad003f, type: 3}
-  displayText: {fileID: 0}
-  headline: {fileID: 0}
+  outputText: {fileID: 0}
+  headlineText: {fileID: 0}
   pauseDuration: 2
+  headlineDefault: Place your hand above Leap!
+  headlineDetected: 'Detected MCE letter:'
+  headlineTimeout: Try again. Make a MCE gesture.
 --- !u!82 &939080402484145049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -462,7 +465,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &244136558612107950
 MonoBehaviour:
@@ -545,7 +548,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6845630036324212867
 MonoBehaviour:
@@ -628,7 +631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3718436992232740722
 MonoBehaviour:
@@ -711,7 +714,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1196658525848059240
 MonoBehaviour:
@@ -794,7 +797,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7199739820409306200
 MonoBehaviour:
@@ -1144,7 +1147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7150760539781405038
 MonoBehaviour:
@@ -1227,7 +1230,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6393517000640248319
 MonoBehaviour:
@@ -1310,7 +1313,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6107775226014581564
 MonoBehaviour:
@@ -1452,7 +1455,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164027930542364136}
-  m_RootOrder: 11
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2975584711430825260
 MonoBehaviour:
