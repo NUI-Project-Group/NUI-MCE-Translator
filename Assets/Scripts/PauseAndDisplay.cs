@@ -6,9 +6,21 @@ public class PauseAndDisplay : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private List<AudioClip> audioFiles;
-    [SerializeField] private TMP_Text displayText;
+    [SerializeField] private TMP_Text outputText, headlineText;
     [SerializeField] private float pauseDuration = 2f; // 2 seconds pause
+    [SerializeField]
+    private string headlineDefault = "Place your hand above Leap!",
+        headlineDetected = "Detected MCE letter:", headlineTimeout = "Try again. Make a MCE gesture.";
     private float lastDetectedTime = 0;
+
+    private void Update()
+    {
+        // Resets Texts after 5s of waiting after each detection.
+        if (lastDetectedTime != 0 && (Time.time > lastDetectedTime + 5.0f))
+            OnLetterLost(headlineTimeout);
+        if (lastDetectedTime != 0 && (Time.time > lastDetectedTime + 30.0f))
+            OnLetterLost(headlineDefault);
+    }
 
     /// <summary>
     /// This method would be called by your detection script.
@@ -21,12 +33,34 @@ public class PauseAndDisplay : MonoBehaviour
          * Set the new text only if more than pauseDuration seconds
          * passed since last detection and no sound is still playing.
          */
-        if (Time.time - lastDetectedTime > pauseDuration && !audioSource.isPlaying)
+        if (!audioSource.isPlaying && Time.time - lastDetectedTime > pauseDuration)
         {
-            displayText.text = detectedLetter;
+            headlineText.text = headlineDetected;
+            outputText.text = detectedLetter;
             lastDetectedTime = Time.time;
             PlaySound(detectedLetter);
         }
+    }
+
+    /// <summary>
+    /// This method would be called by your detection script.
+    /// It clears the letter and headline text.
+    /// <param name="setText">The text to set.</param>
+    /// </summary>
+    public void OnLetterLost(string setText)
+    {
+        outputText.text = "";
+        headlineText.text = setText;
+    }
+
+    /// <summary>
+    /// Overload method.
+    /// This method would be called by your detection script.
+    /// It clears the letter and headline text.
+    /// </summary>
+    public void OnLetterLost()
+    {
+        OnLetterLost(headlineTimeout);
     }
 
     /// <summary>

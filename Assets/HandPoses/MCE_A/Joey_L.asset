@@ -247,11 +247,11 @@ MonoBehaviour:
       Type: 4
       Id: 754
       HandId: 75
-      TipPosition: {x: -0.04336144, y: 0.000775422, z: 0.85217935}
-      Direction: {x: 0.07832997, y: -0.98600245, z: -0.1471851}
-      Width: 0.015075591
-      Length: 0.03907805
-      IsExtended: 0
+      TipPosition: {x: 0, y: 0, z: 0}
+      Direction: {x: 0, y: 0, z: 0}
+      Width: 0
+      Length: 0
+      IsExtended: 1
       TimeVisible: 13.032677
     PalmPosition: {x: -0.025343008, y: 0.017905023, z: 0.83371836}
     PalmVelocity: {x: -0.016249526, y: 0.0081038885, z: 0.004342202}
@@ -272,8 +272,8 @@ MonoBehaviour:
       NextJoint: {x: -0.046426725, y: -0.05008326, z: 0.82643104}
       Center: {x: -0.12233113, y: -0.15037487, z: 0.8107973}
       Direction: {x: 0.59887475, y: 0.7912864, z: 0.123348124}
-      Length: 0.25349006
-      Width: 0.059823643
+      Length: 0
+      Width: 2.15
       Type: -1
       Rotation: {x: -0.5697668, y: 0.3371821, z: -0.08488139, w: 0.744627}
   mirroredHand:
@@ -486,9 +486,9 @@ MonoBehaviour:
       HandId: 75
       TipPosition: {x: 0.04336144, y: 0.000775422, z: 0.85217935}
       Direction: {x: -0.07832997, y: -0.98600245, z: -0.1471851}
-      Width: 0.015075591
-      Length: 0.03907805
-      IsExtended: 0
+      Width: 0
+      Length: 0
+      IsExtended: 1
       TimeVisible: 13.032677
     PalmPosition: {x: 0.025343008, y: 0.017905023, z: 0.83371836}
     PalmVelocity: {x: 0.016249526, y: 0.0081038885, z: 0.004342202}
@@ -508,9 +508,9 @@ MonoBehaviour:
       PrevJoint: {x: 0.19823553, y: -0.2506665, z: 0.7951635}
       NextJoint: {x: 0.046426725, y: -0.05008326, z: 0.82643104}
       Center: {x: 0.12233113, y: -0.15037487, z: 0.8107973}
-      Direction: {x: -0.59887475, y: 0.7912864, z: 0.123348124}
-      Length: 0.25349006
-      Width: 0.059823643
+      Direction: {x: 0, y: 0, z: 0}
+      Length: 0
+      Width: 2.15
       Type: -1
       Rotation: {x: -0.5697668, y: -0.3371821, z: 0.08488139, w: 0.744627}
   hysteresisThreshold: 5
