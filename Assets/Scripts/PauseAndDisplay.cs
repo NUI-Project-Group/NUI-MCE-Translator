@@ -35,10 +35,10 @@ public class PauseAndDisplay : MonoBehaviour
          */
         if (!audioSource.isPlaying && Time.time - lastDetectedTime > pauseDuration)
         {
+            PlaySound(detectedLetter);
             headlineText.text = headlineDetected;
             outputText.text = detectedLetter;
             lastDetectedTime = Time.time;
-            PlaySound(detectedLetter);
         }
     }
 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6615104546730652188}
   m_Layer: 0
-  m_Name: TestDetector
+  m_Name: SmallDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -357,7 +357,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -590,7 +590,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -653,9 +653,9 @@ MonoBehaviour:
   OnPoseDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3216011233882053251}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: 
+      - m_Target: {fileID: 5689378295835742717}
+        m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
+        m_MethodName: OnLetterDetected
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -673,7 +673,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -756,7 +756,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -996,7 +996,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: OnLetterDetected
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1097,7 +1097,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1180,7 +1180,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1245,7 +1245,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: OnLetterDetected
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1263,7 +1263,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5689378295835742717}
         m_TargetAssemblyTypeName: PauseAndDisplay, Assembly-CSharp
-        m_MethodName: OnLetterLost
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
