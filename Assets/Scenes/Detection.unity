@@ -4412,7 +4412,7 @@ PrefabInstance:
     - target: {fileID: 244136558612107950, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 244136558612107950, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -6992,7 +6992,7 @@ PrefabInstance:
     - target: {fileID: 1196658525848059240, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 1196658525848059240, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -8768,7 +8768,7 @@ PrefabInstance:
     - target: {fileID: 2975584711430825260, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 2975584711430825260, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -11768,7 +11768,7 @@ PrefabInstance:
     - target: {fileID: 3718436992232740722, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 3718436992232740722, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -13840,7 +13840,7 @@ PrefabInstance:
     - target: {fileID: 5511931085468248172, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 5511931085468248172, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
@@ -13871,7 +13871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5691926976814131604, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5950233574417675785, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: headline
@@ -15796,7 +15796,7 @@ PrefabInstance:
     - target: {fileID: 6107775226014581564, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 6107775226014581564, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
@@ -18160,7 +18160,7 @@ PrefabInstance:
     - target: {fileID: 6393517000640248319, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 6393517000640248319, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -20768,7 +20768,7 @@ PrefabInstance:
     - target: {fileID: 6845630036324212867, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 6845630036324212867, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -22720,7 +22720,7 @@ PrefabInstance:
     - target: {fileID: 7150760539781405038, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880126131}
     - target: {fileID: 7150760539781405038, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: OnPoseDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLetterDetected
@@ -25323,7 +25323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7602910937872193622, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7649305210242512607, guid: e560de591f801104193c441af9379deb, type: 3}
       propertyPath: m_IsActive

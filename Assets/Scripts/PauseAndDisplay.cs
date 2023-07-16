@@ -11,6 +11,13 @@ public class PauseAndDisplay : MonoBehaviour
     [SerializeField] private string headlineDefault = "Place your hand above Leap!", headlineDetected = "Detected MCE letter:";
     private float lastDetectedTime = 0;
 
+    private void Update()
+    {
+        // Resets Texts after 5s of waiting after each detection.
+        if (lastDetectedTime != 0 && (Time.time > lastDetectedTime + 5.0f))
+            OnLetterLost();
+    }
+
     /// <summary>
     /// This method would be called by your detection script.
     /// It displays the letter and plays the sound.
@@ -22,7 +29,7 @@ public class PauseAndDisplay : MonoBehaviour
          * Set the new text only if more than pauseDuration seconds
          * passed since last detection and no sound is still playing.
          */
-        if (Time.time - lastDetectedTime > pauseDuration && !audioSource.isPlaying)
+        if (!audioSource.isPlaying && Time.time - lastDetectedTime > pauseDuration)
         {
             headline.text = headlineDetected;
             displayText.text = detectedLetter;
