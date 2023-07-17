@@ -21,9 +21,10 @@ The MCU Natural User Interface is a Unity-based application that allows users to
 
 ### Prerequisites
 
-- Unity 20XX.XX or later: Make sure you have Unity installed on your development machine.
+- Unity 2021.3.23f1 or later for Development.
+- Any version of Unity when building.
 - Leap Motion V2 device: Connect the Leap Motion V2 device to your computer.
-- Leap Motion SDK: Download the Leap Motion SDK from the [Leap Motion website](https://www.leapmotion.com/).
+- Leap Motion SDK for Development: Download the Leap Motion SDK from the [Leap Motion website](https://www.leapmotion.com/).
 
 ### Installation
 
@@ -39,10 +40,6 @@ The MCU Natural User Interface is a Unity-based application that allows users to
 2. Position your hand(s) within the field of view of the Leap Motion V2 device.
 3. Perform sign language gestures for vowels or numbers, following the on-screen instructions.
 4. Receive audio and visual feedback indicating the recognized sign.
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
 
 ## Acknowledgments
 
