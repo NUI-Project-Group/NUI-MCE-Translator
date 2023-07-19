@@ -26,7 +26,9 @@ public class DEV_Recorder : MonoBehaviour
         if (leapProvider == null)
         {
             Debug.Log("Plese select a Leap Provider.");
-            EditorApplication.isPlaying = false;
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         }
     }
 
@@ -129,7 +131,7 @@ public class DEV_Recorder : MonoBehaviour
         OnPoseSaved?.Invoke(newItem);
 #else
             Debug.LogError("Error saving Hand Pose: You can not save Hand Poses in a built application.");
-            return null;
+        //return null;
 #endif
     }
 }
